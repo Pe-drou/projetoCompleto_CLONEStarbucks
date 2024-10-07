@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/starbucks-favicon.png" type="image/x-icon">
+    <title>Estarbuquis</title>
 </head>
 <body>
-    
+    <!-- tag semântica 'principal' -->
+    <main>
+        <div class="circulo"></div>
+
+        <header>
+            <a href="#"><img src="assets/logo.png" alt="logo" class="logo"></a>
+
+            <!-- div para menu hamburger (em telas menores) -->
+             <div class="toggle" onclick="ToggleMenu();"></div>
+
+            <!-- links -->
+             <ul class="links">
+                <li><a href="https://www.starbucks.com.br/" target="_blank">Home</a></li>
+                <li><a href="https://www.starbucks.com.br/menu-list" target="_blank">Menu</a></li>
+                <li><a href="https://www.starbucks.com.br/responsabilidade" target="_blank">Novidades</a></li>
+                <li><a href="https://www.starbucks.com.br/lojas" target="_blank">Lojas</a></li>
+             </ul>
+        </header>
+        <div class="conteudo">
+            <div class="textoPrincipal">
+                <!-- texto principal -->
+                 <h2>Não é apenas um café, é:<br><span>Starbucks</span></h2>
+
+                <!-- texto secundário -->
+                 <p>Descubra um mundo de sabores inesquescíveis com a Starbucks. Cada colherada é uma explosão de sabores irresistíveis que vão te conquistar!</p>
+
+                <!-- botão -->
+                 <a href="https://www.starbucks.com.br/" target="_blank">Veja mais</a>
+            </div>
+
+            <!-- imagem sorvete grande (a direita) -->
+             <div class="imgBox"><img src="assets/img1.png" alt="copo" class="Starboquis"></div>
+        
+        </div>
+            <!-- imagem copos pequeno -->
+        <ul class="sorvetes">
+            <li><img src="assets/thumb1.png" alt="sorvete icone" onclick="imgSlider('assets/img1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="assets/thumb2.png" alt="sorvete icone" onclick="imgSlider('assets/img2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="assets/thumb3.png" alt="sorvete icone" onclick="imgSlider('assets/img3.png'); changeCircleColor('#d752b1')"></li>
+        </ul>
+
+        <!-- Links redes sociais -->
+        <ul class="sociais">
+            <li><a href="https://www.facebook.com/StarbucksBrasil/" target="_blank"><img src="assets/facebook.png" alt="link facebook"></a></li>
+            <li><a href="https://www.threads.net/@starbucks" target="_blank"><img src="assets/threads.png" alt="link threads" id="threads"></a></li>
+            <li><a href="https://www.instagram.com/starbucksbrasil/" target="_blank"><img src="assets/instagram.png" alt="link instagram"></a></li>
+        </ul>
+    </main>
 </body>
 </html>
